@@ -1,0 +1,75 @@
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-height">
+<meta name="viewport" content="initial-scale=1.0">
+
+<html>
+<head>
+
+<!--
+	CREDITS/INSPIRATION:
+  First and foremost: http://www.lacma.org/art/exhibition/james-turrell-light-reignfall
+
+	http://0xfe.blogspot.de/2011/08/generating-tones-with-web-audio-api.html
+	http://patorjk.com/experiments/tones/
+	https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html#AudioPannerNode-section
+	https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html#AudioListener-section
+-->
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="bower_components/jquery/jquery.min.js"></script>
+<script src="bower_components/three.js/three.min.js"></script>
+<script src="bower_components/StereoEffect/index.js"></script>
+<script src="js/modularKeyboard.js"></script>
+<script src="js/main.js"></script>
+<script src="js/BinauralBeat.js"></script>
+<script type="text/javascript">
+var app = new soundBoard;
+var bb;
+$(document).ready(function(){
+  var disclaimer = 'If you have sensitivity to strobe lights do not use this. Also: By clicking OK you agree not to hold the author responsible should anything happen to you.'
+  if( window.confirm(disclaimer) ){
+    window.open('https://github.com/alexsmith540/perceptual-cellphone','thanks!')
+  }
+  $('#start')[0].addEventListener('click',function(){
+    $('#start').hide();
+    app.init();
+    bb = new BinauralBeat(400,500);
+    setTimeout(function(){
+      app.playBin(0); 
+      $('canvas')[0].webkitRequestFullScreen();
+    },200)
+    startStrobe();
+
+    $(document).click(function(){
+      $('#logp').html($('#log').html())
+    })
+  },false);
+	
+})
+</script>
+
+
+</head>
+<body>
+	<div id="log"></div>
+	<div id="logp"></div>
+
+  <div id="start">
+    <a class="ghlink" href="https://github.com/alexsmith540/perceptual-cellphone">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/52760788cde945287fbb584134c4cbc2bc36f904/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f77686974655f6666666666662e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_white_ffffff.png">
+    </a>
+    <small>
+      Instructions: Plugin headphones ~50% volume, goto landscape mode. After it starts, hold your phone/ipad/screen close to your face as to immerse your eyeballs. Then relax.
+    </small>
+    
+    <div class="clickstart">[click to start]</div>
+
+    <small>iPhone tip: Rotate phone to/from/to landscape to hide url bars if they are showing</small>
+    
+    <img class="rotate" src="img/rotate.png" alt="rotate phone pls" />
+    
+    <small>#note: Ideal volume? Just below no clacking sound is ideal. Lower may be better. You decide.</small>
+
+    <small>#note: If you dont hear a low/subtle roaring sound and some high pitched nonsense try using chrome.</small>
+  
+</body>
+</html>

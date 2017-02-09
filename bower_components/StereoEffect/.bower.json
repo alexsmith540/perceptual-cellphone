@@ -1,0 +1,12 @@
+{
+  "name": "StereoEffect",
+  "_cacheHeaders": {
+    "Last-Modified": "Thu, 15 Dec 2016 08:10:49 GMT",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "https://threejs.org/examples/js/effects/StereoEffect.js",
+  "_target": "*",
+  "_originalSource": "https://threejs.org/examples/js/effects/StereoEffect.js",
+  "_direct": true
+}

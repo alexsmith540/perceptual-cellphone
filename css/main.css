@@ -1,0 +1,88 @@
+#log,#logp{
+  position:absolute;
+  color:#ddd;
+  top:0;
+  display:none;
+}
+body,html{
+  margin:0;
+  padding:0;
+}
+#body {
+  width: 100%;
+  height: 100%;
+  position: relative; 
+  margin:0;
+  padding:0;
+}
+#start{
+  font-family: Helvetica;
+  background:#222;
+  color:#eee;
+  width:80%;
+  padding: 0 10%;
+  height:100%;
+  font-size:24px;
+  font-weight:100;
+  text-align:center;
+  z-index:500;
+  position:absolute;
+  top:0;
+  left:0;
+  line-height:20px;
+}
+#start small{
+  font-size: 14px;
+  clear:both;
+  display:block;
+}
+
+.ribbon_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 320px;
+  overflow: hidden;
+}
+
+.ribbon {
+  position: absolute;
+  width: 428px;
+  height: 60px;
+  left: -95px;
+  top: 93px;
+  background-color: red;
+  border: 2px dashed yellow;
+  box-shadow: 0 0 0 3px red,
+              0 0 15px 10px #ccc;
+  -webkit-transform: rotate(-45deg);
+  text-align: center;
+  font-size: 150%;
+  font-weight: 700;
+}
+
+.ribbon span {
+  font-size: 80%;
+  font-weight: 400;
+}
+html,body{
+  padding:0;
+  margin:0;
+  background:#222;
+}
+.rotate{
+  max-width:150px;
+  display: block;
+  clear:both;
+  margin: 20px auto;
+}
+.clickstart{
+  margin: 10px 0;
+}
+.ghlink{
+  opacity:0.5;
+}
+.ghlink:hover{
+  opacity:1.0;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "StereoCamera",
+  "_cacheHeaders": {
+    "ETag": "W/\"0dc362cf784ddb0bbc4148f8855751d3dbf1f023\"",
+    "Content-Type": "application/javascript;charset=utf-8"
+  },
+  "_release": "e-tag:W/\"0dc362c",
+  "main": "index.js",
+  "_source": "https://rawgit.com/owntheweb/three.js/dev/examples/js/cameras/StereoCamera.js",
+  "_target": "*",
+  "_originalSource": "https://rawgit.com/owntheweb/three.js/dev/examples/js/cameras/StereoCamera.js",
+  "_direct": true
+}
