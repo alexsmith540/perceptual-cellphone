@@ -6,8 +6,8 @@
   },
   "_release": "e-tag:W/\"0dc362c",
   "main": "index.js",
-  "_source": "https://rawgit.com/owntheweb/three.js/dev/examples/js/cameras/StereoCamera.js",
+  "_source": "https://cdn.jsdelivr.net/gh/owntheweb/three.js@dev/examples/js/cameras/StereoCamera.js",
   "_target": "*",
-  "_originalSource": "https://rawgit.com/owntheweb/three.js/dev/examples/js/cameras/StereoCamera.js",
+  "_originalSource": "https://cdn.jsdelivr.net/gh/owntheweb/three.js@dev/examples/js/cameras/StereoCamera.js",
   "_direct": true
 }
